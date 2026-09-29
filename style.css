@@ -1,0 +1,74 @@
+*{
+    scroll-behavior:smooth;
+    font-family:"Poppins";
+}
+.header{
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    padding:1rem 2%;
+    background:rgba(0,0,0,0.3);
+    backdrop-filter: blur(10px) brightness(50%);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:1000;
+}
+.navbar{
+    padding-right:45%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+#name{
+    text-color:rgba(255, 234, 5, 0.87);
+    font-family: "Pacifico", cursive;
+    text-decoration:none;
+    
+
+}
+.top1{
+    padding:0 5%;
+    color:rgba(255, 234, 5, 0.87);
+    font-family: "Pacifico", cursive;
+    font-size:20px;
+    text-decoration:none;
+    transition:0.3s ease-in-out;
+    
+}
+.top1:hover{
+    transform:scale(1.05);
+}
+#mail{
+    color:rgba(255, 234, 5, 0.87);
+    background-color:black;
+    font-family: "Pacifico", cursive;
+    white-space:nowrap;
+    margin-left:90%;
+    margin-right:10%;
+    border-radius:1.5rem;
+    font-size:1.3rem;
+    transition:0.3s ease-in-out;
+    
+
+}
+
+#mail:hover{
+    transform:scale(1.05);
+    
+}
+
+.title{
+    font-size:2rem;
+    text-decoration:none;
+    color:rgba(255, 234, 5, 0.87);
+    transition: 0.3s ease-in-out;
+    
+}
+.title:hover{
+    transform:scale(1.05);
+}
+.home{
+    margin-top:6rem;
+}
