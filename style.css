@@ -1,12 +1,35 @@
+@font-face {
+    font-family:"curly" ;
+    src: url(fonts/Celina\ Diary\ -\ Personal\ Use.otf) format('opentype');
+    font-weight:normal;
+    font-style:normal;
+}
+@font-face{
+    font-family:"cool";
+    src: url(fonts/Dkaintnothingfancy-re5A.otf) format('opentype');
+    font-weight:normal;
+    font-style:normal;
+}
 *{
     scroll-behavior:smooth;
     font-family:"Poppins";
+    
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+}
+body{
+    background-color: rgba(47, 45, 45, 0.695);
+}
+.img_s{
+    z-index:0;
 }
 .header{
     position:fixed;
     width:100%;
     top:0;
     left:0;
+    right:0;
     padding:1rem 2%;
     background:rgba(0,0,0,0.3);
     backdrop-filter: blur(10px) brightness(50%);
@@ -22,7 +45,7 @@
     align-items:center;
 }
 #name{
-    text-color:rgba(255, 234, 5, 0.87);
+    color:rgba(255, 234, 5, 0.87);
     font-family: "Pacifico", cursive;
     text-decoration:none;
     
@@ -45,8 +68,8 @@
     background-color:black;
     font-family: "Pacifico", cursive;
     white-space:nowrap;
-    margin-left:90%;
-    margin-right:10%;
+    align-self:flex-end;
+    
     border-radius:1.5rem;
     font-size:1.3rem;
     transition:0.3s ease-in-out;
@@ -69,6 +92,71 @@
 .title:hover{
     transform:scale(1.05);
 }
-.home{
-    margin-top:6rem;
+.home {
+    width: 100%;
+    min-height: 100vh;
+
+    background-image: url("images/mod.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-content {
+    font-family:"curly",cursive;
+    position: absolute;
+    left: 10%;
+    top: 25%;
+}
+.home-content h1{
+    font-family:"cool";
+    color:rgba(255, 234, 5, 0.87);
+    font-size:3rem;
+}
+.main_page{
+    
+    font-family:"curly" , cursive;
+    font-size: 8rem;
+    color:rgba(255, 234, 5, 0.87);
+    
+    
+}
+#heading{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:7rem;
+    font-family:"custom-header", cursive;
+    color:rgba(255, 234, 5, 0.87);
+    padding:0;
+    margin-top:6%;
+
+}
+.main_page{
+    display:flex;
+    gap:10px;
+
+}
+
+#cmt5{
+    font-family:"cool";
+    font-size:2rem;
+    
+    text-decoration:none;
+    color:rgba(255, 234, 5, 0.87);
+    background-color: rgb(208, 69, 14);
+    border-radius:1rem;
+    padding-left:0.2rem;
+    padding-right:0.1rem;
+    transition: 0.3s ease-in-out;
+    
+}
+#cmt5:hover{
+    transform:scale(1.05);
 }
