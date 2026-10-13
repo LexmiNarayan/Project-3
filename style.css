@@ -25,7 +25,7 @@ body{
     z-index:0;
 }
 .header{
-    position:fixed;
+    position:absolute;
     width:100%;
     top:0;
     left:0;
@@ -46,16 +46,17 @@ body{
 }
 #name{
     color:rgba(255, 234, 5, 0.87);
+    font-size:3rem;
     font-family: "Pacifico", cursive;
     text-decoration:none;
     
 
 }
 .top1{
-    padding:0 5%;
+    padding:0 10%;
     color:rgba(255, 234, 5, 0.87);
     font-family: "Pacifico", cursive;
-    font-size:20px;
+    font-size:2rem;
     text-decoration:none;
     transition:0.3s ease-in-out;
     
@@ -106,6 +107,49 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.search{
+    position:relative;
+    background-image: url("images/mod.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height:100vh;
+    width:100%;
+    
+}
+
+.info{
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    width: 90%;
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    gap:30px;
+    box-sizing:border-box;
+}
+.search-name{
+    width:100%;
+    background-color:rgba(0,0,0,0.5);
+    font-family: "Pacifico", cursive;
+    font-size:3rem;
+    padding:10px;
+    color:rgba(255, 234, 5, 0.87);
+    box-sizing:border-box;
+}
+.recom,
+.predict {
+    position: static;
+    width: 50%;
+    min-width: 0;
+}
+
+.recom h2,
+.predict h2 {
+    text-align: center;
+    overflow-wrap: break-word;
 }
 
 .home-content {
